@@ -2,7 +2,7 @@ import react, { useEffect, useState } from 'react'
 function App() {
   const [message, setMessage] = useState('')
   useEffect(()=>{
-    fetch('http://localhost:4000')
+    fetch('https://mern-deploy-backend-nvrh.onrender.com')
     .then(res =>{
       res.json().then(data =>{
         setMessage(data.message)
